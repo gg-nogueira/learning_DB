@@ -1,0 +1,59 @@
+recursos {
+ PM
+ BA
+ DBA
+ Dev
+}
+
+cada recurso possuí nome, número de registro e salário. É necessário
+manter uma base histórica de mudança de salário
+
+cada recurso possuí um telefone
+telefone {
+ residencial
+ comercial
+ celular
+ ramal
+}
+
+cada recurso possí endereço
+
+cada Dev pode ter mais de uma ferramenta e cada ferramente pode ser usada por um dev
+
+equipe {
+ recursos
+}
+
+equipe pode ter vários projetos porém um projeto só tem uma equipe. Uma equipe tem nome e número de recursos pré-definido
+
+projeto {
+ nome
+ código
+ dataInício
+ dataTérminoPrevisto
+ dataTérminoReal
+ status
+ horasPrevistas
+ horasReais
+ gerente
+}
+
+cada projeto possui varias atividades e cada atividade possui:
+
+atividade{
+ registro
+ nome
+}
+
+cada atividade faz parte de vários projetos mas cada projeto só pode ter uma atividade por vez
+
+cada atividade possuí tarefas específicas:
+
+tarefasEspecíficas{
+ codigo
+ descrição
+}
+
+cada gerente pode fazer parte de mais de um projeto, mas cada projeto só pode ter 1 gerente
+ 
+

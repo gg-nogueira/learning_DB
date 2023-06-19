@@ -1,0 +1,64 @@
+<mxfile host="app.diagrams.net" modified="2023-05-20T02:15:34.798Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36" etag="beamGBLr0QvSDwR5XvFa" version="21.3.2" type="device">
+  <diagram name="Page-1" id="ACNMWLmb_TJ1yoBqvFr0">
+    <mxGraphModel dx="1195" dy="698" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="GHDCve-yGzx-gXSc0Gwi-6" value="BaseHistorica" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=50;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;arcSize=4;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="80" width="160" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="GHDCve-yGzx-gXSc0Gwi-7" value="datas&lt;br&gt;valores" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;html=1;" vertex="1" parent="GHDCve-yGzx-gXSc0Gwi-6">
+          <mxGeometry y="50" width="160" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="GHDCve-yGzx-gXSc0Gwi-9" value="RecursosInfo" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=50;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;arcSize=4;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="300" y="80" width="160" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="GHDCve-yGzx-gXSc0Gwi-10" value="nome&lt;br&gt;numero_rg&lt;br&gt;salario&lt;br&gt;classificacoes&lt;br&gt;endereco_contato" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;html=1;" vertex="1" parent="GHDCve-yGzx-gXSc0Gwi-9">
+          <mxGeometry y="50" width="160" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="GHDCve-yGzx-gXSc0Gwi-14" value="TarefasEspecificas" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=50;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;arcSize=4;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="590" y="900" width="160" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="GHDCve-yGzx-gXSc0Gwi-15" value="codigo&lt;br&gt;descricao" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;html=1;" vertex="1" parent="GHDCve-yGzx-gXSc0Gwi-14">
+          <mxGeometry y="50" width="160" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="GHDCve-yGzx-gXSc0Gwi-16" value="Atividades" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=50;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;arcSize=4;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="590" y="700" width="160" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="GHDCve-yGzx-gXSc0Gwi-17" value="registro_cod&lt;br&gt;nome" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;html=1;" vertex="1" parent="GHDCve-yGzx-gXSc0Gwi-16">
+          <mxGeometry y="50" width="160" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="GHDCve-yGzx-gXSc0Gwi-18" value="GerenciaAtividades" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=50;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;arcSize=4;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="590" y="490" width="160" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="GHDCve-yGzx-gXSc0Gwi-19" value="id&lt;br&gt;nome&lt;br&gt;atividades" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;html=1;" vertex="1" parent="GHDCve-yGzx-gXSc0Gwi-18">
+          <mxGeometry y="50" width="160" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="GHDCve-yGzx-gXSc0Gwi-20" value="Projetos" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=50;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;arcSize=4;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="300" y="490" width="160" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="GHDCve-yGzx-gXSc0Gwi-21" value="nome&lt;br&gt;codigo&lt;br&gt;data_inicio&lt;br&gt;data_prevista_final&lt;br&gt;data_final&lt;br&gt;status&lt;br&gt;horas&lt;br&gt;horar_reais&lt;br&gt;gerente" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;html=1;" vertex="1" parent="GHDCve-yGzx-gXSc0Gwi-20">
+          <mxGeometry y="50" width="160" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="GHDCve-yGzx-gXSc0Gwi-22" value="Contatos" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=50;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;arcSize=4;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="280" width="160" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="GHDCve-yGzx-gXSc0Gwi-23" value="celular&lt;br&gt;ramal_interno" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;html=1;" vertex="1" parent="GHDCve-yGzx-gXSc0Gwi-22">
+          <mxGeometry y="50" width="160" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="GHDCve-yGzx-gXSc0Gwi-24" value="FerramentasDev" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=50;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;arcSize=4;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="300" y="280" width="160" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="GHDCve-yGzx-gXSc0Gwi-25" value="nome&lt;br&gt;versao" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;html=1;" vertex="1" parent="GHDCve-yGzx-gXSc0Gwi-24">
+          <mxGeometry y="50" width="160" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="GHDCve-yGzx-gXSc0Gwi-26" value="Equipes" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=50;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;arcSize=4;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="590" y="280" width="160" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="GHDCve-yGzx-gXSc0Gwi-27" value="nome_equipe&lt;br&gt;numero_recurso&lt;br&gt;recurso&lt;br&gt;projeto" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;html=1;" vertex="1" parent="GHDCve-yGzx-gXSc0Gwi-26">
+          <mxGeometry y="50" width="160" height="100" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

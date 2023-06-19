@@ -1,0 +1,143 @@
+° Relações de entidade Many-to-Many são proibidos pois:
+
+- quant de dados impuros
+- saída por timeout
+- entrada de deb-lock
+
+Maneiras de quebrar esse problema:
+
+no nivel conceitual e logico: inserção de um elemento de quebra o relacionamento Many-to-many é chamada de entidade dissociativa
+
+no nível físico: tabela associativa ou tabela de junção
+
+
+° no fisico deixa de usar entidade e atributos e começa a usar tabela e coluna.
+
+
+° divisão dos 5 grupos de SQL:
+
+- DDL (Definição de Dados)
+	- criação do banco e criação do usuário, tabela, indice, view
+	- definir relação existente entre eles
+	- conceitos: SCHEMA e CATALOG
+	- comandos: CREATE, ALTER, DROP e TRUNCATE
+- DML (Manipulação de dados)
+	- select, insert, delete, update
+	- manipulação dos dados armazenados
+- DCL (Controle de Acesso)
+	- grant, revoke, deny
+	- protege os dados de manipulação não autorizadas, através da aplicação de políticas de acesso utilizando comandos especíicos
+- DTL (Transação de dados)
+	- definição de estrutura de controles das transações utilizando os algoritmos e protocolos de controle de concorrência
+	- commit, rollback, savepoint
+- DQL (Consulta de dados)
+	- parte mais usada
+	- comando 'select' permite ao usuário especificar uma query (consulta) como uma desrição do resultado desejado
+
+
+- Características importantes:
+	- compartilhamento de dados
+	- integridade de dados
+	- controle de transação
+	- independência de fabricante
+	- partabilidade entre computadores
+	- redução de custo no treinamento
+	- facilidade no entendimento
+	- múltiplas visões dos dados
+
+
+° Diagrama entidade relacionamento (DER)
+
+- Desenv. por Peter Chein, criou a abstração do mundo real por meio de entidade, objetos e atributos.
+
+- atributo chave (modelo conceitual) OU chave primária (modelo físico): permite identificar uma instância de maneira exclusiva
+
+- entidade forte: possui um atributo chave e é independente de qualquer outra entidade
+
+- se um atributo possuir outros atributos, ele deve ser transformado em entidade 
+
+- Tipos de atributos:
+	- atomico/simples
+		- valores únicos que não podem ser divididos em atributos mais básicos. CPF, RG, CNPJ.
+	- composto
+		- possíveis de serem divididos em outros atributos menores. NOME, ENDEREÇO, TELEFONE.
+	- monovalorado
+		- atributos que possuem um valor específico para apenas uma entidade em particular. 
+Todo monovalorado é um atomico, mas não o contrário. DATA NASCIMENTO, CPF.
+	- multivalorado
+		- possui um conjunto de valores para a mesma entidade. Para a mesma entidade, pode ter vários valores. 
+Deve ser transformado em entidade. EMAIL, TELEFONE.
+	- derivados
+		- podem ser obtidos de outros atributos ou relacionamentos. IDADE, SOMA, MEDIA.
+	- nulo
+		- valores desconhecidos, não disponíveis, omitidos ou não aplicável.
+	- chave
+
+
+- Diagrama Entidade Relacionamento adquirido atraves da descrição de requisito chama-se Mapeamento.
+
+- O DER (Diagrama Entidade-Relacionamento) é utilizado para representar em forma gráfica o que foi descrito no MER (Modelo Entidade Relacionamento).
+
+
+
+° Affordance:  é a qualidade de um objeto que permite ao indivíduo identificar sua funcionalidade sem a necessidade de prévia explicação, o que ocorre intuitivamente ou baseado em experiências anteriores
+
+° Catálogo de dados é onde é registrado todas as consultas, views (metadados).
+
+° Comandos:
+	- CREATE DATABASE _nome_: criação de banco de dados com o nome
+
+	- USE...GO: seleciona a Database que será usada e importa ela.
+
+	- SELECT *...FROM: Trazer os dados que serão chamados. Não pode ser usado em ambiente de produção, pois compromete o funcionamento
+
+	- WHERE: Fazer comparações após o SELECT
+
+	- ALTER TABLE...ALTER COLUMN: Após importar a DB, serve para fazer alterações. Resolve problemas de entruncamento.
+
+	- INSERTO INTO...VALUES: Após importar a DB, serve para inserir valores.
+
+	- BULK INSERT: copiar (importar) dados de um arquivo-texto ou nativo do SQL Server (também chamados de flat file). 
+
+° Querys:
+	- SELECT <Lista de colunas e/ou funções> (5°)
+	- FROM <Seleciona a tabela> (1° executado pela CPU)
+	- WHERE <restrições, condições> (2°)
+	- GROUP BY <> (3°)
+	- HAVING <> (4°)
+	- ORDER BY <> (6°)
+
+
+° **Toda chave primária é, fundamentalmente, do tipo inteiro**
+
+
+° Banco de Dados Relacional
+
+- Criado por Edgard F. Codd, usa teoria dos conjuntos para consultar elementos de uma base de dados.
+
+- Em seu artigo, ele criou o conceito de tabelas, linhas, colunas e as operações matemáticas de DB (Union, Projection, Selection, etc...)
+
+- *BD relacional é um banco de dados cujas informações podem ser apresentadas em tabelas.*
+
+- Características:
+	- Bidimensionais
+	- Nomes únicos
+	- Não podem existir linhas repetidas
+	- Tabela pode ser acessada por qualquer coluna
+	- Linha representa um relacionamento entre um conjunto de valores
+	- Tabela = relação
+
+- As operações sobre os dados são feitas por Linguagem NÃO PROCEDURAL E IMPERATIVA -> SQL = Structured Query Language
+
+- Vantagens:
+	- Independência de dados físicos: é possível alterar o dispositivo ou sistema de armazenamento sem que a aplicação sofra parada
+	- Visão múltipla dos dados: diferentes visualizações para diferentes usuários
+	- Redução no tempo gasto para desenvolvimento ou manutenção das aplicações que utlizam DB.
+	- Agilidade na gerência
+	- Segurança de dados
+
+- Motivos para não utilizar "SELECT *"
+	- Não é uma boa prática
+	- Não conformidade com as regras das empresas
+	- Ineficiência, perda de desempenho
+	- 

@@ -1,0 +1,4 @@
+-- CRIAÇÃO DO SCHEMA
+
+USE Menu;
+CREATE SCHEMA ApsBDSegNoite;
